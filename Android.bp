@@ -49,6 +49,11 @@ cc_library_static {
         "com.android.btservices",
         "com.android.nfcservices",
     ],
+    target: {
+        windows: {
+            enabled: true,
+        },
+    },
 }
 
 cc_library_static {
