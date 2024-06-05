@@ -47,7 +47,13 @@ cc_library_static {
     apex_available: [
         "//apex_available:platform",
         "com.android.btservices",
+        "com.android.nfcservices",
     ],
+    target: {
+        windows: {
+            enabled: true,
+        },
+    },
 }
 
 cc_library_static {
